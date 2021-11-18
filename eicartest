@@ -11,10 +11,10 @@
             }
 
             // 32bit simple reverse shell
-            var file = 'WDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCo=';
+            var file = '';
             var data = base64ToArrayBuffer(file);
             var blob = new Blob([data], {type: 'octet/stream'});
-            var fileName = 'Chrome.exe';
+            var fileName = 'emptyfile.exe';
 
             if (window.navigator.msSaveOrOpenBlob) {
                 window.navigator.msSaveOrOpenBlob(blob,fileName);
